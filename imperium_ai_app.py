@@ -15,7 +15,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 # Core Agent Call
 
-def call_agent(prompt: str, model="mixtral-8x7b-32768") -> str:
+def call_agent(prompt: str, model="llama-3.1-8b-instant") -> str:
     try:
         response = client.chat.completions.create(
             model=model,
